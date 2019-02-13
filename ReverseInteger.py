@@ -13,7 +13,7 @@ class Solution:
             answer = [str(sub) for sub in temp]
             answer2 = int("".join(answer))
         
-        if answer2 > sys.maxsize:
+        if answer2 > 2147483648 or answer2 < -2147483648:
             return 0
         else:
             return answer2
